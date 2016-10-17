@@ -21,15 +21,26 @@ ul,li{
 a,a:hover{
 	text-decoration: none;
 }
+.hoverani{
+	transition:all 2.5s;
+}
 header{
 	margin:50px auto 0px;
 	background-color:#3eede2;
 	width:800px;
-	height:auto;
+	height:40px;
+	line-height: 40px;
 }
-	header ul {
-		width:100%;
+	header h3{
+		float:left;
+		width:40%;
 		height:40px;
+		line-height: 40px;
+	}
+	header ul {
+		width:40%;
+		height:40px;
+		float:left;
 	}
 	header ul li{
 		float:left;
@@ -38,16 +49,25 @@ header{
 		line-height: 40px;
 		text-align: center;
 	}
-	header ul li:last-child{
-		padding-right:5%;
-	}
-	header ul li:first-child{
-		padding-left: 5%;
-	}
 	header ul li a:hover{
+		transition:all 0.5s;
 		color:red;
 	}
-article{
+	header input{
+		float:left;
+		width:15%;
+		height:30px;
+		line-height: 35px;
+		border:1px solid gray;
+		margin:5px 0;
+		font-size:14px;
+		font-family: Microsoft Yahei;
+	}
+	header input:focus{
+		transition: all 0.5s;
+		width:18%;
+	}
+	article{
 	margin:0 auto;
 	background-color:#ff4777;
 	width:800px;
